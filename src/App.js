@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import YTSearch from './youtubeSearch';
+import search from './youtubeSearch';
 import axios from 'axios';
 
 import SearchBar from './components/search_bar';
@@ -23,7 +23,7 @@ class App extends Component {
    }
 //Hey miles this is hardcoded to only recieve 15 videos you know you need to fix that for better UX
    videoSearch(term){
-     YTSearch({key: API_KEY, term: term, maxResults: 30}, (videos) => {
+     search({key: API_KEY, term: term, maxResults: 30}, (videos) => {
        if (videos.length < 1) {
          this.setState({videos: [], noResults: true});
          return;
