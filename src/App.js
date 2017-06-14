@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import YTSearch from 'youtube-api-search';
+import YTSearch from './youtubeSearch';
 import axios from 'axios';
 
 import SearchBar from './components/search_bar';
