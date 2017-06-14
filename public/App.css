@@ -110,6 +110,7 @@ input:focus {
 .video-list-container{
   display: flex;
   margin-left: 15%;
+  cursor: pointer;
 }
 
 .video-list-title {
@@ -153,7 +154,13 @@ input:focus {
 }
 
 .close-video-button {
+  font-size: 24px;
+  margin-left: 10px;
   height: 30px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .detail-title {

@@ -21,7 +21,7 @@ class App extends Component {
       noResults: false
      };
    }
-
+//Hey miles this is hardcoded to only recieve 15 videos you know you need to fix that for better UX
    videoSearch(term){
      YTSearch({key: API_KEY, term: term, maxResults: 15}, (videos) => {
        if (videos.length < 1) {
